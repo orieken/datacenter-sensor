@@ -1,0 +1,22 @@
+{
+  "name": "webdashboard",
+  "homepage": "x",
+  "authors": [
+    "x"
+  ],
+  "description": "",
+  "main": "templates/layout.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "smoothie": "^1.27.0"
+  }
+}

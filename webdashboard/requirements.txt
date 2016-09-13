@@ -1,0 +1,8 @@
+flask
+flask-bower
+mamba
+requests
+PyHamcrest
+conttest
+expects
+redis
