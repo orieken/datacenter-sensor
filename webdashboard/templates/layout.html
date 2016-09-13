@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="js/smoothie.js" type="text/javascript" language="javascript"></script>
-    <script src="js/angular.js" type="text/javascript" language="javascript"></script>
-    <script src="js/controllers.js" type="text/javascript" language="javascript"></script>
+    <script src="{{ url_for('bower_components.static', filename='angular/angular.min.js') }}" type="text/javascript" language="JavaScript"></script>
+    <script src="{{ url_for('bower_components.static', filename='smoothie/smoothie.js') }}" type="text/javascript" language="JavaScript"></script>
+    <script type = "text/javascript" src = "{{ url_for('static', filename = 'js/app.js') }}" ></script>
+    <script type = "text/javascript" src = "{{ url_for('static', filename = 'js/controllers.js') }}" ></script>
 
     <style type="text/css">
 body {
@@ -27,12 +28,14 @@ th, td {
 }
 tr:nth-child(even) {background-color: #f2f2f2}
 
+
     </style>
     <title>Sensor dashboard</title>
 </head>
 <body ng-app="dashboard">
-  <div class="content">
-    {% block body %}{% endblock %}
-  </div>
+<div class="content">
+    {% block body %}
+    {% endblock %}
+</div>
 </body>
 </html>
