@@ -1,5 +1,4 @@
 import os
-import redis
 import json
 
 from flask import Flask, request, render_template, send_from_directory
