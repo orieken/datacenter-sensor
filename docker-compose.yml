@@ -12,7 +12,8 @@ services:
 
   web:
     build:
-      context: "./webdashboard/"
+      context: ./webdashboard/
+      dockerfile: Dockerfile.pi.web
     networks:
       - frontend
     privileged: true
